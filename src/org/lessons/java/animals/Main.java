@@ -17,6 +17,7 @@ public class Main {
         passero.dormi();
         passero.verso();
         passero.mangia();
+        System.out.println(passero.faiVolare());
 
         System.out.println("-------------- AQUILA --------------");
 
@@ -26,6 +27,7 @@ public class Main {
         aquila.dormi();
         aquila.verso();
         aquila.mangia();
+        volare(aquila);
 
         System.out.println("-------------- DELFINO --------------");
 
@@ -35,6 +37,19 @@ public class Main {
         delfino.dormi();
         delfino.verso();
         delfino.mangia();
+        nuotare(delfino);
+    }
+
+    public static void nuotare(INuotante animale) {
+
+        System.out.println(animale.faiNuotare());
+
+    }
+
+    public static void volare(IVolante animale) {
+
+        System.out.println(animale.faiVolare());
+
     }
 
 }

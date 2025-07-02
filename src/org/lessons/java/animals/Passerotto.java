@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Passerotto extends AbstractAnimal {
+public class Passerotto extends AbstractAnimal implements IVolante {
     private int lunghezzaBecco;
 
     public Passerotto(String razza, String colore, int dimensioni, int lunghezzaBecco) {
@@ -29,5 +29,10 @@ public class Passerotto extends AbstractAnimal {
     @Override
     public void mangia() {
         System.out.println("Vermi");
+    }
+
+    @Override
+    public String faiVolare() {
+        return "Sto volando!!!";
     }
 }

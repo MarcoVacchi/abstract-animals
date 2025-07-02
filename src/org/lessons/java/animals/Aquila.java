@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Aquila extends AbstractAnimal {
+public class Aquila extends AbstractAnimal implements IVolante {
     private int lunghezzaBecco;
 
     public Aquila(String razza, String colore, int dimensioni, int lunghezzaBecco) {
@@ -29,5 +29,10 @@ public class Aquila extends AbstractAnimal {
     @Override
     public void mangia() {
         System.out.println("Insetti");
+    }
+
+    @Override
+    public String faiVolare() {
+        return "Sto volando!!!";
     }
 }

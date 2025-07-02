@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Delfino extends AbstractAnimal {
+public class Delfino extends AbstractAnimal implements INuotante {
     private int numeroPinne;
 
     public Delfino(String razza, String colore, int dimensioni, int numeroPinne) {
@@ -29,5 +29,10 @@ public class Delfino extends AbstractAnimal {
     @Override
     public void mangia() {
         System.out.println("Pesci");
+    }
+
+    @Override
+    public String faiNuotare() {
+        return "Sto nuotando!!!";
     }
 }
